@@ -1,0 +1,405 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="theme-color" content="#0b1120" />
+
+  <meta
+    name="description"
+    content="Portfolio of Mohammed Sakir Qureshi — Network Security Engineer specializing in Enterprise Security, Firewalls, VPN, ZTNA, and SASE."
+  />
+
+  <title>Mohammed Sakir Qureshi | Network Security Engineer</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- PRECONNECT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- FONT -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- AOS -->
+  <link
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+    rel="stylesheet"
+  >
+
+  <!-- ICONS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/simple-icons-font@v12/font/simple-icons.min.css"
+  >
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+  if(localStorage.getItem("theme") === "light"){
+    document.documentElement.classList.add("light-mode-preload");}
+    
+    </script>
+
+</head>
+
+<body>
+
+  <div id="progressBar"></div>
+
+  <canvas id="network"></canvas>
+
+  <!-- NAVBAR -->
+  <nav>
+
+    <div class="logo">
+      Portfolio
+    </div>
+
+    <button class="menu-btn" id="menuBtn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+
+      <li><a href="#about">About</a></li>
+
+      <li><a href="#skills">Skills</a></li>
+
+      <li><a href="#projects">Projects</a></li>
+
+      <li><a href="#resume">Resume</a></li>
+
+      <li><a href="#contact">Contact</a></li>
+
+      <li>
+        <button id="themeToggle" class="theme-toggle">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+
+    <div class="hero-content" data-aos="fade-up">
+
+      <div class="hero-tag">
+        NETWORK SECURITY ENGINEER
+      </div>
+
+      <h1 id="typingName">
+        Mohammed Sakir Qureshi
+      </h1>
+
+      <p>
+        Building secure enterprise infrastructure with expertise in
+        Firewalls, VPN, ZTNA, SASE, Routing, and Network Security Architecture.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#projects" class="btn primary-btn">
+          View Projects
+        </a>
+
+        <a href="#contact" class="btn secondary-btn">
+          Contact Me
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about" data-aos="fade-up">
+
+      <div class="section-title">
+        About Me
+      </div>
+
+      <div class="card about-card">
+
+        <p>
+          Experienced Network Security Engineer with strong expertise in
+          enterprise-grade firewall management, VPN technologies, Zero Trust
+          Network Access (ZTNA), SASE architecture, routing & switching,
+          and advanced security infrastructure.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" data-aos="fade-up">
+
+      <div class="section-title">
+        Technical Skills
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Network Security</span>
+        </div>
+
+        <div class="skill-card">
+            <iconify-icon icon="mdi-firewall" class="firewall-icon"></iconify-icon>
+            <span>Firewalls</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="si si-fortinet"></i>
+            <span>Fortinet</span>
+        </div>
+
+        <div class="skill-card">
+            <span class="icon-box">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="#38bdf8" style="display:block;">
+                    <path d="M12 2l8 4v6c0 5-3.4 9.4-8 10-4.6-.6-8-5-8-10V6l8-4z"/>
+                    <text x="12" y="14" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">S</text>
+                </svg>
+            </span>
+            Sophos
+        </div>
+        
+        <div class="skill-card">
+            <i class="si si-sonicwall"></i>
+            <span>SonicWall</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-lock"></i>
+            <span>VPN</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-cloud"></i>
+            <span>SASE</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-network-wired"></i>
+            <span>Routing & Switching</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="si si-cisco"></i>
+            <span>Cisco</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="si si-huawei"></i>
+            <span>Huawei</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="si si-mikrotik"></i>
+            <span>MikroTik</span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" data-aos="fade-up">
+
+      <div class="section-title">
+        Projects
+      </div>
+
+        <div class="projects-intro">
+        Real-world network security implementations focused on enterprise-grade infrastructure and zero trust architecture.
+        </div>
+
+        <div class="projects-grid">
+
+        <div class="project-card">
+
+            <div class="project-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <h3>
+            Enterprise Firewall Deployment
+            </h3>
+
+            <p>
+            Designed and implemented firewall policies for enterprise network security using rule-based access control, NAT, and traffic filtering to secure internal and external communication.
+            </p>
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-icon">
+            <i class="fa-solid fa-user-shield"></i>
+            </div>
+
+            <h3>
+            Zero Trust Network Access Implementation
+            </h3>
+
+            <p>
+            Deployed and managed Zero Trust Network Access (ZTNA) solutions to enforce strict access controls and ensure secure remote access to enterprise resources.
+            </p>
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-icon">
+            <i class="fa-solid fa-cloud"></i>
+            </div>
+
+            <h3>
+            SASE Architecture Design
+            </h3>
+
+            <p>
+            Designed Secure Access Service Edge (SASE) architecture integrating networking and security services such as SD-WAN, CASB, and secure web gateway for cloud-first environments.
+            </p>
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-icon">
+            <i class="fa-solid fa-network-wired"></i>
+            </div>
+
+            <h3>
+            Network Segmentation & Access Control
+            </h3>
+
+            <p>
+            Implemented VLAN-based segmentation and ACL policies to isolate network traffic and improve security posture across enterprise environments.
+            </p>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" data-aos="fade-up">
+
+      <div class="section-title">
+        Resume
+      </div>
+
+      <div class="card resume-card">
+
+        <p>
+          Download my updated resume.
+        </p>
+
+        <a href="Network_Security_Engineer.pdf" download class="btn primary-btn">
+          Download Resume
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" data-aos="fade-up">
+
+      <div class="section-title">
+        Contact
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="card contact-card">
+
+          <h3>Email</h3>
+
+          <p>
+            shakirsqureshi4403@gmail.com
+          </p>
+
+        </div>
+
+        <div class="card contact-card">
+
+          <h3>Phone</h3>
+
+          <p>
+            +91 90995 64403
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="social-buttons">
+
+        <a
+          href="https://github.com/shakir007-creator"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-btn"
+        >
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/mohammed-sakir-qureshi-1790571b6/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-btn"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          LinkedIn
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    © 2026 Mohammed Sakir Qureshi
+
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
